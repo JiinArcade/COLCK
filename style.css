@@ -37,6 +37,10 @@ header {
   position: absolute;
 }
 
+.logow {
+  display: none;
+}
+
 ul {
   width: 550px;
   display: flex;

@@ -9,6 +9,7 @@ let logow = document.querySelector(".logow")
 let font = document.querySelector(".font")
 
 
+
 morningBtn.addEventListener('click', function() {
   back.style.backgroundImage = 'url(./img/bg_morning.jpg)'
   hand.style.backgroundImage = 'url(./img/phone_morning.png)'
@@ -24,8 +25,8 @@ afternoonBtn.addEventListener('click', function() {
 });
 
 eveningBtn.addEventListener('click', function() {
-  back.style.backgroundImage = 'url(./img/bg_evening.jpg)'
-  hand.style.backgroundImage = 'url(./img/phone_evening.png)'
+  back.style.backgroundImage = 'url(./img/bg_evening.jpg)';
+  hand.style.backgroundImage = 'url(./img/phone_evening.png)';
   logow.style.display = "none"
   logob.style.display = "block"
 });
@@ -35,7 +36,7 @@ nightBtn.addEventListener('click', function() {
   hand.style.backgroundImage = 'url(./img/phone_night.png)'
   logob.style.display = "none"
   logow.style.display = "block"
-  font.getElementsByClassName(".font").style.color = '#fff';
+  document.getElementsByClassName(".font").style.color = '#fff';
 });
 
 
