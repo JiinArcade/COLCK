@@ -32,7 +32,6 @@ $(function(){
     $(".font").css("color", "white");
     $(".font-item").children("a").css("color", "white");
     $(".clock").css("color", "white");
-
   })
   $("#morning").click(function(){
     $(".logow").css("display", "none");
