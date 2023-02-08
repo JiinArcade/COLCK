@@ -56,10 +56,18 @@ main {
   position: relative;
 }
 
+.font-item a {
+  font-weight: 400;
+}
+
 .title,
 .sub {
   position: absolute;
   left: 200px;
+}
+
+.font {
+  color: #000;
 }
 
 .title {
@@ -80,6 +88,10 @@ span {
   top: 250px;
 }
 
+.clock {
+  color: #000;
+}
+
 #clock-box {
   width: 1000px;
   height: 700px;
@@ -93,8 +105,8 @@ span {
   position: absolute;
   top: 250px;
   left: 1100px;
-  font-weight: 700;
-  font-size: 80px;
+  font-weight: 400;
+  font-size: 70px;
   width: 400px;
   justify-content: space-between;
 }
@@ -115,6 +127,7 @@ button {
   opacity: 0.6;
   font-size: 15px;
   margin-top: -50px;
+  z-index: 100;
 }
 
 button:active {
@@ -122,6 +135,52 @@ button:active {
   color: #fff;
   opacity: 1;
 }
+
+#cloud-wrapper > img:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .8;
+	animation: ani1 100s linear infinite;
+	z-index: 100;
+}
+
+#cloud-wrapper > img:nth-child(2) {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	opacity: .8;
+	animation: ani2 100s linear infinite;
+	z-index: 100;
+}
+
+@keyframes ani1 {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 1960px;
+		opacity: 0;
+	}
+	60% {
+		left: -1840px;
+		opacity: 0.8;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+
 
 
 

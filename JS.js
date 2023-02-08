@@ -4,11 +4,6 @@ let eveningBtn = document.getElementById("evening");
 let nightBtn = document.getElementById("night");
 let back = document.getElementById("bgm");
 let hand = document.getElementById("clock-box");
-let logob = document.querySelector(".logob")
-let logow = document.querySelector(".logow")
-let font = document.querySelector(".font")
-
-
 
 morningBtn.addEventListener('click', function() {
   back.style.backgroundImage = 'url(./img/bg_morning.jpg)'
@@ -21,14 +16,45 @@ afternoonBtn.addEventListener('click', function() {
 });
 
 eveningBtn.addEventListener('click', function() {
-  back.style.backgroundImage = 'url(./img/bg_evening.jpg)';
-  hand.style.backgroundImage = 'url(./img/phone_evening.png)';
+  back.style.backgroundImage = 'url(./img/bg_evening.jpg)'
+  hand.style.backgroundImage = 'url(./img/phone_evening.png)'
 });
 
 nightBtn.addEventListener('click', function() {
   back.style.backgroundImage = 'url(./img/bg_night.jpg)'
   hand.style.backgroundImage = 'url(./img/phone_night.png)'
 });
+
+
+$(function(){
+  $("#night").click(function(){
+    $(".logow").css("display", "block");
+    $(".font").css("color", "white");
+    $(".font-item").children("a").css("color", "white");
+    $(".clock").css("color", "white");
+
+  })
+  $("#morning").click(function(){
+    $(".logow").css("display", "none");
+    $(".font").css("color", "black");
+    $(".font-item").children("a").css("color", "black");
+    $(".clock").css("color", "black");
+  })
+  $("#afternoon").click(function(){
+    $(".logow").css("display", "none");
+    $(".font").css("color", "black");
+    $(".font-item").children("a").css("color", "black");
+    $(".clock").css("color", "black");
+  })
+  $("#evening").click(function(){
+    $(".logow").css("display", "none");
+    $(".font").css("color", "black");
+    $(".font-item").children("a").css("color", "black");
+    $(".clock").css("color", "black");
+  })
+});
+
+
 
 
 
