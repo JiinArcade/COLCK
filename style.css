@@ -93,6 +93,7 @@ span {
   position: absolute;
   top: 250px;
   left: 1100px;
+  font-weight: 700;
   font-size: 80px;
   width: 400px;
   justify-content: space-between;
